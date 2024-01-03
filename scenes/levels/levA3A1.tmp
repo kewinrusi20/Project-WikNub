@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://ch2v5gqtrqlf"]
+
+[ext_resource type="Texture2D" uid="uid://ccm1n7f841c7u" path="res://graphics/car/main.png" id="1_kg6qd"]
+[ext_resource type="Script" path="res://scripts/CarImage.gd" id="2_cxdpn"]
+[ext_resource type="Texture2D" uid="uid://phb4aye225s7" path="res://graphics/new one/man.png" id="3_77ult"]
+[ext_resource type="Texture2D" uid="uid://qwjux75ntgvu" path="res://graphics/new one/goku.png" id="4_s7n4k"]
+[ext_resource type="Script" path="res://scripts/BlastBlue1.gd" id="6_ihn6p"]
+[ext_resource type="Texture2D" uid="uid://bxs2hwycenpfn" path="res://graphics/new one/blast_purple.png" id="8_kjpgo"]
+
+[node name="Level" type="Node2D"]
+
+[node name="CarImage" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-38, 87)
+rotation = 1.5708
+scale = Vector2(0.0896227, 0.0896227)
+texture = ExtResource("1_kg6qd")
+script = ExtResource("2_cxdpn")
+
+[node name="Man" type="Sprite2D" parent="."]
+position = Vector2(78, 165)
+scale = Vector2(0.0569445, 0.0569444)
+texture = ExtResource("3_77ult")
+flip_h = true
+
+[node name="Goku" type="Sprite2D" parent="."]
+position = Vector2(188, 46)
+scale = Vector2(0.0531843, 0.0531843)
+texture = ExtResource("4_s7n4k")
+
+[node name="BlastBlue1" type="Sprite2D" parent="."]
+position = Vector2(199, 37)
+scale = Vector2(0.0172656, 0.0172656)
+texture = ExtResource("8_kjpgo")
+region_rect = Rect2(0, 0, 800, 801)
+script = ExtResource("6_ihn6p")
